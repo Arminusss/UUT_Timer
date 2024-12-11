@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Ensure footer stays at the bottom */
+    align-items: center;
+    height: 100vh;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Make the container responsive */
+    max-width: 1200px; /* Limit the maximum width */
+    margin-top: 20px; /* Add margin to the top for better visibility */
+}
+
+#time {
+    font-size: 1.5em; /* Slightly reduce font size for better fit */
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    color: #333;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    th, td {
+        padding: 4px; /* Reduce padding on smaller screens */
+    }
+
+    #time {
+        font-size: 1.2em; /* Further reduce font size on smaller screens */
+    }
+}
